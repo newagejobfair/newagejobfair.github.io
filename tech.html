@@ -38,89 +38,111 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
-  
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
+    }
+
+    #main-img {
+      background-image: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      /* Center the image */
+      background-size: cover;
+      box-shadow: inset 9999px 0 0 9999px rgba(0, 0, 0, .4);
+    }
+
+    .large-jumbo {
+      margin-left: 500;
+      margin-right: auto;
+      width: 700px;
+    }
+
+    .seperated-jumbo {
+      margin-left: 200;
+      margin-right: 200;
+    }
+
+    .textwidth {
+      width: 300;
+    }
+
+    .marginimg {
+      margin-top: -340;
+    }
+
+    .purple-container {
+      background-color: #210d38;
+    }
+
+    .gray-container {
+      background-color: #2a3136;
+    }
+
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    li>a {
+      color: white;
+      text-decoration: none;
+      background-color: transparent;
+
+
+    }
+
+    .active>a:hover {
+      transform: scale(1.05);
+      transition-duration: 50ms;
+      border-bottom: 1px solid;
+      color: rgba(255, 255, 255, 0.601)
+    }
+
+    .active>a:hover:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    #novelmindtext{
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 992px) {
+      #novelmindimg{
+        margin-left:1.5rem;
       }
-  
-      #main-img {
-        background-image: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        /* Center the image */
-        background-size: cover;
-        box-shadow: inset 9999px 0 0 9999px rgba(0, 0, 0, .4);
+      #novelmindtext{
+        font-size:1.2em;
       }
-  
-      .large-jumbo {
-        margin-left: 500;
-        margin-right: auto;
-        width: 700px;
-      }
-  
-      .seperated-jumbo {
-        margin-left: 200;
-        margin-right: 200;
-      }
-  
-      .textwidth {
-        width: 300;
-      }
-  
-      .marginimg {
-        margin-top: -340;
-      }
-  
-      .purple-container {
-        background-color: #210d38;
-      }
-  
-      .gray-container {
-        background-color: #2a3136;
-      }
-  
-      .center-block {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      li>a {
-        color: white;
-        text-decoration: none;
-        background-color: transparent;
-  
-  
-      }
-  
-      .active>a:hover {
-        transform: scale(1.05);
-        transition-duration: 50ms;
-        border-bottom: 1px solid;
-        color: rgba(255, 255, 255, 0.601)
-      }
-  
-      .active>a:hover:after {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
+
       
-    </style>
+    }
+    @media screen and (max-width: 500px) {
+      #novelmindimg{
+        margin-left: 0;
+        width:280;
+      }
+      #novelmindtext{
+        font-size:1.2em;
+      }
+
+    }
+  </style>
 
 
 </head>
-
 <body>
 
   <!-- Header and navigation bar -->
@@ -164,7 +186,7 @@
             <li class="nav-item dropdown p-4" style="bottom:0.3rem">
               <a class="nav-link navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Social Media
+                Follow us
               </a>
               <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown" style="background-color: #0c164f;">
                 <a href="https://www.instagram.com/newagejobfair" target="_blank">
@@ -204,19 +226,29 @@
     <!-- Fullstack web dev -->
 
     <br class="">
-    </div>
-    <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Machine Learning and Artificial Intelligence</h1>
-        <img style="float:left;" src="https://i.gyazo.com/5fe6f2248bbbf10b1e8595b8b4f3874c.png" class="seperated-jumbo"
-          width="300" alt="">
-        <p class="seperated-jumbo col-md-8 fs-4">novel_mind is a company based in Hampton, VA that works on creating AI
-          that works with brains. You may know them from their products M.I.B.S and Disease Detector, which are used in
-          hospitals around the country and are being further research and top institutions. novel_mind is looking for
-          students with candor, kindness and strong team working skills to help build their new team in the DMV. Interns
-          will be able to work with the latest technologies with and machine learning and focus their efforts to build
-          products that will be able to revolutionize the medical field, especially with brains.</p>
+    <div class="p-5 mb-2 bg-light rounded-3">
+      <h1 class=" fw-bold">Machine Learning and Artificial Intelligence</h1>
+      <div class="container py-5">
+        <div class="row">
+
+        <div class="col-md-6">
+          <img style="" src="https://i.gyazo.com/5fe6f2248bbbf10b1e8595b8b4f3874c.png" class="" id="novelmindimg"
+            width="300" alt="">
+        </div>
+        <div class="col-md-6">
+          <span class="" style="" id="novelmindtext">novel_mind is a company based in Hampton, VA that works on creating AI
+            that works with brains. You may know them from their products M.I.B.S and Disease Detector, which are used
+            in
+            hospitals around the country and are being further research and top institutions. novel_mind is looking for
+            students with candor, kindness and strong team working skills to help build their new team in the DMV.
+            Interns
+            will be able to work with the latest technologies with and machine learning and focus their efforts to build
+            products that will be able to revolutionize the medical field, especially with brains.</p>
+        </div>
       </div>
+
+      </div>
+
     </div>
     <br>
 
