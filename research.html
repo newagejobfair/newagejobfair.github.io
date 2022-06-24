@@ -6,6 +6,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.83.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Age Job Fair</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
@@ -85,7 +86,7 @@
       background-color: #2a3136;
     }
 
-    .purple-container{
+    .purple-container {
       background-color: #531663;
     }
 
@@ -120,6 +121,43 @@
       margin-top: -20rem;
       margin-left: 38em;
       width: 40%;
+    }
+
+    #novelmindtext{
+      font-size: 1.5rem;
+    }
+    #novelmindimg{
+      margin-left:5rem;
+    }
+    @media screen and (max-width: 991px) {
+      #novelmindimg{
+        margin-left:1.5rem;
+      }
+      #novelmindtext{
+        font-size:1.2em;
+      }
+
+      
+    }
+    @media screen and (max-width: 767px) {
+      #novelmindimg{
+        margin-left: 5.5rem;
+        width:310;
+      }
+      #novelmindtext{
+        font-size:1.2em;
+      }
+
+    }
+    @media screen and (max-width: 767px) {
+      #novelmindimg{
+        margin-left: 0rem;
+        width:280;
+      }
+      #novelmindtext{
+        font-size:1.2em;
+      }
+
     }
   </style>
 
@@ -169,7 +207,7 @@
             <li class="nav-item dropdown p-4" style="bottom:0.3rem">
               <a class="nav-link navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Social Media
+                Follow us
               </a>
               <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown" style="background-color: #0c164f;">
                 <a href="https://www.instagram.com/newagejobfair" target="_blank">
@@ -209,22 +247,44 @@
     <!-- Fullstack web dev -->
 
     <br class="">
-    </div>
 
-
-    </div>
-      <div class="p-5 mb-4 maroon-container bg-light rounded-3">
+    <!-- <div class="p-5 mb-4 maroon-container bg-light rounded-3">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Humanitarianism</h1>
           <img style="float:left;" src="https://i.gyazo.com/1483563103a755310f1b75173a2ba811.png" class="seperated-jumbo"
             width="300" alt="">
-          <p class="seperated-jumbo col-md-8 fs-4">FakeBrain is an AI research company whose mission is to ensure that its
-            intelligent systems benefit humanity. It uses highly autonomous systems that outpreform humans in the most
-            economically valuable work. FakeBrain has many research projects including multimodal for neural networks,
-            CLIP: Connecting Text and Images, and a robot hand that can solve a rubix cube.</p>
+          <p class="seperated-jumbo col-md-8 fs-4">
+           
+          </p>
         </div>
       </div>
-    <br>
+    <br> -->
+    <div class="p-5 mb-2 bg-light rounded-3">
+      <h1 class=" fw-bold">Machine Learning and Artificial Intelligence</h1>
+      <div class="container py-5">
+        <div class="row">
+        <div class="col-md-6">
+          <span class="" style="" id="novelmindtext">novel_mind is a company based in Hampton, VA that works on creating AI
+            that works with brains. You may know them from their products M.I.B.S and Disease Detector, which are used
+            in
+            hospitals around the country and are being further research and top institutions. novel_mind is looking for
+            students with candor, kindness and strong team working skills to help build their new team in the DMV.
+            Interns
+            will be able to work with the latest technologies with and machine learning and focus their efforts to build
+            products that will be able to revolutionize the medical field, especially with brains.</p>
+        </div>
+        <div class="col-md-6">
+          <img style="" src="https://i.gyazo.com/1483563103a755310f1b75173a2ba811.png" class="" id="novelmindimg"
+            width="300" alt="">
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+
+    </div>
 
     <div class="row align-items-md-stretch">
       <div class="col-md-6 gray-container">
@@ -241,7 +301,8 @@
       <div class="col-md-6 purple-container">
         <div class="h-100 p-5 rounded-3">
           <h2 class="text-light">Data Science</h2>
-          <p class="text-light">Bigger Data does it all. From AI and data analytics to high-performance computing (HPC) to rendering, data
+          <p class="text-light">Bigger Data does it all. From AI and data analytics to high-performance computing (HPC)
+            to rendering, data
             centers are key to solving some of the most important challenges. The end-to-end NVIDIA accelerated
             computing platform, integrated across hardware and software, gives enterprises the blueprint to a robust,
             secure infrastructure that supports develop-to-deploy implementations across all modern workloads. </p>
